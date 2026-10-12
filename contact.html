@@ -416,6 +416,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg-0);color:var(--t-1);min-
 @media(max-width:768px){.floating-orbs{display:none}}
 
 @media(max-width:640px){.contact-card{padding:1.5rem}.cta-banner{padding:2rem 1.5rem}}
+
+/* ============ PHONE/TABLET MENU FIX: compact icon row (desktop unchanged) ============ */
+@media(max-width:950px){
+  .nav-links{flex:0 0 100%;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:.3rem}
+  .nav-links li:nth-last-child(-n+5){width:auto}
+  .nav-links a.social-icon{width:42px;height:42px;padding:0;border-radius:50%;justify-content:center}
+  .nav-links a.social-icon i{font-size:1.1rem;margin:0}
+}
 </style>
 </head>
 <body>

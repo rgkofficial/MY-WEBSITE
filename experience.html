@@ -205,6 +205,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg-0);color:var(--t-1);min-
 .floating-orbs span:nth-child(7){width:6px;height:6px;top:12%;left:62%;animation-delay:18s;background:radial-gradient(circle,#5eead4 0%,transparent 70%);box-shadow:0 0 20px rgba(94,234,212,.5)}
 @keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1);opacity:.22}25%{transform:translate(22px,-32px) scale(1.15);opacity:.45}50%{transform:translate(-18px,-62px) scale(.88);opacity:.32}75%{transform:translate(28px,-22px) scale(1.2);opacity:.5}}
 @media(max-width:768px){.floating-orbs{display:none}}
+
+/* ============ PHONE/TABLET MENU FIX: compact icon row (desktop unchanged) ============ */
+@media(max-width:950px){
+  .nav-links{flex:0 0 100%;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:.3rem}
+  .nav-links li:nth-last-child(-n+5){width:auto}
+  .nav-links a.social-icon{width:42px;height:42px;padding:0;border-radius:50%;justify-content:center}
+  .nav-links a.social-icon i{font-size:1.1rem;margin:0}
+}
 </style>
 </head>
 <body>
